@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Capture Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-light">Carbon Capture Calculator</h1>
+        <div class="row mt-4">
+            <div class="col-md-6 offset-md-3">
+                <form id="emissionForm">
+                    <div class="form-group">
+                        <label for="annualEmissions">Enter Your Annual CO2 Emissions (tons):</label>
+                        <input type="number" class="form-control" id="annualEmissions" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4" id="results" style="display: none;">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-center text-light">Results</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Annual Emissions: <span id="resultAnnualEmissions"></span> tons</li>
+                    <li class="list-group-item">Potential Carbon Credits: <span id="resultPotentialCredits"></span> tons</li>
+                    <li class="list-group-item">Potential Revenue: $<span id="resultPotentialRevenue"></span></li>
+                    <li class="list-group-item">Plant Cost: $<span id="resultPlantCost"></span></li>
+                    <li class="list-group-item">Profit by 2026: $<span id="resultProfitBy2026"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <canvas id="emissionsChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #1e7e34;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #155724;
+}
+
+.list-group-item {
+    background-color: #212529;
+    color: #f8f9fa;
+    border: none;
+}
+
+canvas {
+    background-color: #212529;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.list-group-item span {
+    font-weight: bold;
+}
