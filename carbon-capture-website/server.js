@@ -11,7 +11,7 @@ app.post('/api/calculate', (req, res) => {
     const captureRatePerYear = captureRatePerDay * 365; // 1.2 tons/day * 365 days/year
     const potentialCredits = Math.min(annualEmissions, captureRatePerYear);
     const costPerTon = 100; // in dollars
-    const plantCost = 3000000; // 3 million dollars
+    const plantCost = 4000; 
     const potentialRevenue = potentialCredits * costPerTon;
     const profitBy2026 = potentialRevenue - plantCost;
 
